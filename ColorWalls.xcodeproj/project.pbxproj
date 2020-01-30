@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2F30787A23D31A4A003E0E84 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F30787923D31A4A003E0E84 /* MapView.swift */; };
 		2F30787C23D32606003E0E84 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F30787B23D32606003E0E84 /* DetailView.swift */; };
-		2F43E99423E360A4008EA790 /* currentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F43E99323E360A4008EA790 /* currentLocation.swift */; };
 		2F7E685C23CB3A2600C87FA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E685B23CB3A2600C87FA4 /* AppDelegate.swift */; };
 		2F7E685E23CB3A2600C87FA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E685D23CB3A2600C87FA4 /* SceneDelegate.swift */; };
 		2F7E686123CB3A2600C87FA4 /* ColorWalls.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E685F23CB3A2600C87FA4 /* ColorWalls.xcdatamodeld */; };
@@ -17,8 +16,6 @@
 		2F7E686523CB3A2F00C87FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E686423CB3A2F00C87FA4 /* Assets.xcassets */; };
 		2F7E686823CB3A2F00C87FA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E686723CB3A2F00C87FA4 /* Preview Assets.xcassets */; };
 		2F7E686B23CB3A2F00C87FA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E686923CB3A2F00C87FA4 /* LaunchScreen.storyboard */; };
-		2F7E687823CB3ADA00C87FA4 /* Webservices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E687723CB3ADA00C87FA4 /* Webservices.swift */; };
-		2F7E687A23CB3B2300C87FA4 /* LocationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E687923CB3B2300C87FA4 /* LocationListViewModel.swift */; };
 		2F7E687C23CB42A500C87FA4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E687B23CB42A500C87FA4 /* LocationManager.swift */; };
 		2FF4F3ED23E0C3ED00334873 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FF4F3EC23E0C3ED00334873 /* GoogleService-Info.plist */; };
 		2FF4F3EF23E0D4B300334873 /* FirebaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF4F3EE23E0D4B300334873 /* FirebaseData.swift */; };
@@ -29,7 +26,6 @@
 /* Begin PBXFileReference section */
 		2F30787923D31A4A003E0E84 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2F30787B23D32606003E0E84 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		2F43E99323E360A4008EA790 /* currentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentLocation.swift; sourceTree = "<group>"; };
 		2F7E685823CB3A2600C87FA4 /* ColorWalls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorWalls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7E685B23CB3A2600C87FA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F7E685D23CB3A2600C87FA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,8 +35,6 @@
 		2F7E686723CB3A2F00C87FA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2F7E686A23CB3A2F00C87FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F7E686C23CB3A2F00C87FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F7E687723CB3ADA00C87FA4 /* Webservices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservices.swift; sourceTree = "<group>"; };
-		2F7E687923CB3B2300C87FA4 /* LocationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewModel.swift; sourceTree = "<group>"; };
 		2F7E687B23CB42A500C87FA4 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		2FF4F3EC23E0C3ED00334873 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2FF4F3EE23E0D4B300334873 /* FirebaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseData.swift; sourceTree = "<group>"; };
@@ -121,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				2FF4F3F023E0D54200334873 /* Location.swift */,
-				2F43E99323E360A4008EA790 /* currentLocation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -129,7 +122,6 @@
 		2F7E687323CB3A4300C87FA4 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				2F7E687923CB3B2300C87FA4 /* LocationListViewModel.swift */,
 				2F7E687B23CB42A500C87FA4 /* LocationManager.swift */,
 			);
 			path = "View Models";
@@ -138,7 +130,6 @@
 		2F7E687423CB3A5900C87FA4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				2F7E687723CB3ADA00C87FA4 /* Webservices.swift */,
 				2FF4F3EE23E0D4B300334873 /* FirebaseData.swift */,
 			);
 			path = Services;
@@ -295,7 +286,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F7E687823CB3ADA00C87FA4 /* Webservices.swift in Sources */,
 				2F7E686123CB3A2600C87FA4 /* ColorWalls.xcdatamodeld in Sources */,
 				2F7E685C23CB3A2600C87FA4 /* AppDelegate.swift in Sources */,
 				2F30787C23D32606003E0E84 /* DetailView.swift in Sources */,
@@ -303,8 +293,6 @@
 				2F7E687C23CB42A500C87FA4 /* LocationManager.swift in Sources */,
 				2FF4F3F123E0D54200334873 /* Location.swift in Sources */,
 				2FF4F3EF23E0D4B300334873 /* FirebaseData.swift in Sources */,
-				2F43E99423E360A4008EA790 /* currentLocation.swift in Sources */,
-				2F7E687A23CB3B2300C87FA4 /* LocationListViewModel.swift in Sources */,
 				2F30787A23D31A4A003E0E84 /* MapView.swift in Sources */,
 				2F7E685E23CB3A2600C87FA4 /* SceneDelegate.swift in Sources */,
 			);
