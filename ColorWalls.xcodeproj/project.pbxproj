@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F30787A23D31A4A003E0E84 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F30787923D31A4A003E0E84 /* MapView.swift */; };
+		2F30787C23D32606003E0E84 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F30787B23D32606003E0E84 /* DetailView.swift */; };
+		2F43E99423E360A4008EA790 /* currentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F43E99323E360A4008EA790 /* currentLocation.swift */; };
 		2F7E685C23CB3A2600C87FA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E685B23CB3A2600C87FA4 /* AppDelegate.swift */; };
 		2F7E685E23CB3A2600C87FA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E685D23CB3A2600C87FA4 /* SceneDelegate.swift */; };
 		2F7E686123CB3A2600C87FA4 /* ColorWalls.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E685F23CB3A2600C87FA4 /* ColorWalls.xcdatamodeld */; };
@@ -14,9 +17,19 @@
 		2F7E686523CB3A2F00C87FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E686423CB3A2F00C87FA4 /* Assets.xcassets */; };
 		2F7E686823CB3A2F00C87FA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E686723CB3A2F00C87FA4 /* Preview Assets.xcassets */; };
 		2F7E686B23CB3A2F00C87FA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E686923CB3A2F00C87FA4 /* LaunchScreen.storyboard */; };
+		2F7E687823CB3ADA00C87FA4 /* Webservices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E687723CB3ADA00C87FA4 /* Webservices.swift */; };
+		2F7E687A23CB3B2300C87FA4 /* LocationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E687923CB3B2300C87FA4 /* LocationListViewModel.swift */; };
+		2F7E687C23CB42A500C87FA4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E687B23CB42A500C87FA4 /* LocationManager.swift */; };
+		2FF4F3ED23E0C3ED00334873 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FF4F3EC23E0C3ED00334873 /* GoogleService-Info.plist */; };
+		2FF4F3EF23E0D4B300334873 /* FirebaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF4F3EE23E0D4B300334873 /* FirebaseData.swift */; };
+		2FF4F3F123E0D54200334873 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF4F3F023E0D54200334873 /* Location.swift */; };
+		EDC7BCD974A7D226A4A151A8 /* Pods_ColorWalls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966AEF0D18DE8D767F98EDDB /* Pods_ColorWalls.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F30787923D31A4A003E0E84 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2F30787B23D32606003E0E84 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		2F43E99323E360A4008EA790 /* currentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentLocation.swift; sourceTree = "<group>"; };
 		2F7E685823CB3A2600C87FA4 /* ColorWalls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorWalls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7E685B23CB3A2600C87FA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F7E685D23CB3A2600C87FA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +39,15 @@
 		2F7E686723CB3A2F00C87FA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2F7E686A23CB3A2F00C87FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F7E686C23CB3A2F00C87FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F7E687723CB3ADA00C87FA4 /* Webservices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservices.swift; sourceTree = "<group>"; };
+		2F7E687923CB3B2300C87FA4 /* LocationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewModel.swift; sourceTree = "<group>"; };
+		2F7E687B23CB42A500C87FA4 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2FF4F3EC23E0C3ED00334873 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2FF4F3EE23E0D4B300334873 /* FirebaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseData.swift; sourceTree = "<group>"; };
+		2FF4F3F023E0D54200334873 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		7E50F1C00AB8EDEFEAE29D18 /* Pods-ColorWalls.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorWalls.release.xcconfig"; path = "Target Support Files/Pods-ColorWalls/Pods-ColorWalls.release.xcconfig"; sourceTree = "<group>"; };
+		8508C3676FD4AFBE3FD605DC /* Pods-ColorWalls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorWalls.debug.xcconfig"; path = "Target Support Files/Pods-ColorWalls/Pods-ColorWalls.debug.xcconfig"; sourceTree = "<group>"; };
+		966AEF0D18DE8D767F98EDDB /* Pods_ColorWalls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorWalls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +55,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC7BCD974A7D226A4A151A8 /* Pods_ColorWalls.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F30787823D31A2E003E0E84 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F30787923D31A4A003E0E84 /* MapView.swift */,
+				2F30787B23D32606003E0E84 /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2F7E684F23CB3A2600C87FA4 = {
 			isa = PBXGroup;
 			children = (
 				2F7E685A23CB3A2600C87FA4 /* ColorWalls */,
 				2F7E685923CB3A2600C87FA4 /* Products */,
+				46DFD641069BB87E2A50AF64 /* Pods */,
+				6F569BBC2162AF11E0564786 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +92,10 @@
 		2F7E685A23CB3A2600C87FA4 /* ColorWalls */ = {
 			isa = PBXGroup;
 			children = (
+				2F30787823D31A2E003E0E84 /* Views */,
+				2F7E687223CB3A3800C87FA4 /* Models */,
+				2F7E687323CB3A4300C87FA4 /* View Models */,
+				2F7E687423CB3A5900C87FA4 /* Services */,
 				2F7E685B23CB3A2600C87FA4 /* AppDelegate.swift */,
 				2F7E685D23CB3A2600C87FA4 /* SceneDelegate.swift */,
 				2F7E686223CB3A2600C87FA4 /* ContentView.swift */,
@@ -65,6 +103,7 @@
 				2F7E686923CB3A2F00C87FA4 /* LaunchScreen.storyboard */,
 				2F7E686C23CB3A2F00C87FA4 /* Info.plist */,
 				2F7E685F23CB3A2600C87FA4 /* ColorWalls.xcdatamodeld */,
+				2FF4F3EC23E0C3ED00334873 /* GoogleService-Info.plist */,
 				2F7E686623CB3A2F00C87FA4 /* Preview Content */,
 			);
 			path = ColorWalls;
@@ -78,6 +117,50 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2F7E687223CB3A3800C87FA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2FF4F3F023E0D54200334873 /* Location.swift */,
+				2F43E99323E360A4008EA790 /* currentLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F7E687323CB3A4300C87FA4 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F7E687923CB3B2300C87FA4 /* LocationListViewModel.swift */,
+				2F7E687B23CB42A500C87FA4 /* LocationManager.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		2F7E687423CB3A5900C87FA4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2F7E687723CB3ADA00C87FA4 /* Webservices.swift */,
+				2FF4F3EE23E0D4B300334873 /* FirebaseData.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		46DFD641069BB87E2A50AF64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8508C3676FD4AFBE3FD605DC /* Pods-ColorWalls.debug.xcconfig */,
+				7E50F1C00AB8EDEFEAE29D18 /* Pods-ColorWalls.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6F569BBC2162AF11E0564786 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				966AEF0D18DE8D767F98EDDB /* Pods_ColorWalls.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F7E686F23CB3A2F00C87FA4 /* Build configuration list for PBXNativeTarget "ColorWalls" */;
 			buildPhases = (
+				B3C0CFFA5085F3684C620B3A /* [CP] Check Pods Manifest.lock */,
 				2F7E685423CB3A2600C87FA4 /* Sources */,
 				2F7E685523CB3A2600C87FA4 /* Frameworks */,
 				2F7E685623CB3A2600C87FA4 /* Resources */,
+				723F2A494C121CFC069C7E4D /* [CP] Copy Pods Resources */,
+				1D358F97D6BCF0FE06A10C93 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F7E686B23CB3A2F00C87FA4 /* LaunchScreen.storyboard in Resources */,
+				2FF4F3ED23E0C3ED00334873 /* GoogleService-Info.plist in Resources */,
 				2F7E686823CB3A2F00C87FA4 /* Preview Assets.xcassets in Resources */,
 				2F7E686523CB3A2F00C87FA4 /* Assets.xcassets in Resources */,
 			);
@@ -144,14 +231,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D358F97D6BCF0FE06A10C93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ColorWalls/Pods-ColorWalls-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ColorWalls/Pods-ColorWalls-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ColorWalls/Pods-ColorWalls-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		723F2A494C121CFC069C7E4D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ColorWalls/Pods-ColorWalls-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ColorWalls/Pods-ColorWalls-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ColorWalls/Pods-ColorWalls-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3C0CFFA5085F3684C620B3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ColorWalls-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F7E685423CB3A2600C87FA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F7E687823CB3ADA00C87FA4 /* Webservices.swift in Sources */,
 				2F7E686123CB3A2600C87FA4 /* ColorWalls.xcdatamodeld in Sources */,
 				2F7E685C23CB3A2600C87FA4 /* AppDelegate.swift in Sources */,
+				2F30787C23D32606003E0E84 /* DetailView.swift in Sources */,
 				2F7E686323CB3A2600C87FA4 /* ContentView.swift in Sources */,
+				2F7E687C23CB42A500C87FA4 /* LocationManager.swift in Sources */,
+				2FF4F3F123E0D54200334873 /* Location.swift in Sources */,
+				2FF4F3EF23E0D4B300334873 /* FirebaseData.swift in Sources */,
+				2F43E99423E360A4008EA790 /* currentLocation.swift in Sources */,
+				2F7E687A23CB3B2300C87FA4 /* LocationListViewModel.swift in Sources */,
+				2F30787A23D31A4A003E0E84 /* MapView.swift in Sources */,
 				2F7E685E23CB3A2600C87FA4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,6 +440,7 @@
 		};
 		2F7E687023CB3A2F00C87FA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8508C3676FD4AFBE3FD605DC /* Pods-ColorWalls.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +461,7 @@
 		};
 		2F7E687123CB3A2F00C87FA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E50F1C00AB8EDEFEAE29D18 /* Pods-ColorWalls.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
