@@ -15,28 +15,23 @@ struct MapView: UIViewRepresentable {
     
     @ObservedObject var locationManager = LocationManager()
     @ObservedObject var fbData = firebaseData
-    
-    let kMapStyle = "[" +
-    "  {" +
-    "    \"featureType\": \"poi\"," +
-    "    \"elementType\": \"all\"," +
-    "    \"stylers\": [" +
-    "      {" +
-    "        \"visibility\": \"off\"" +
-    "      }" +
-    "    ]" +
-    "  }" +
-    "]"
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
     
     func makeUIView(context: Self.Context) -> GMSMapView {
-
+        
         let camera = GMSCameraPosition.camera(withLatitude: 0, longitude: 0, zoom: 16.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.delegate = context.coordinator
         do {
-          mapView.mapStyle = try GMSMapStyle(jsonString: kMapStyle)
+            if colorScheme == .dark {
+                let styleURL = Bundle.main.url(forResource: "dark", withExtension: "json")
+                mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL!)
+            }else {
+                let styleURL = Bundle.main.url(forResource: "light", withExtension: "json")
+                mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL!)
+            }
         } catch {
-          NSLog("One or more of the map styles failed to load. \(error)")
+            NSLog("One or more of the map styles failed to load. \(error)")
         }
         mapView.settings.compassButton = true
         mapView.isMyLocationEnabled = true
@@ -49,13 +44,13 @@ struct MapView: UIViewRepresentable {
         
         return mapView
     }
-
+    
     func updateUIView(_ mapView: GMSMapView, context: Self.Context) {
-        if let myLocation = locationManager.lastKnownLocation {
-            mapView.animate(toLocation: myLocation.coordinate)
-            print("User's location: \(myLocation)")
-        }
+        
         DispatchQueue.main.async {
+            if let myLocation = self.locationManager.lastKnownLocation {
+                mapView.animate(toLocation: myLocation.coordinate)
+            }
             for mark in self.fbData.data {
                 let marker : GMSMarker = GMSMarker()
                 marker.position = CLLocationCoordinate2D(latitude: mark.location.latitude, longitude: mark.location.longitude)
@@ -66,6 +61,7 @@ struct MapView: UIViewRepresentable {
             }
         }
     }
+    
     
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
@@ -81,7 +77,7 @@ struct MapView_Previews: PreviewProvider {
 
 final class Coordinator: NSObject, GMSMapViewDelegate {
     var control: MapView
-
+    
     init(_ control: MapView) {
         self.control = control
     }
@@ -94,12 +90,5 @@ final class Coordinator: NSObject, GMSMapViewDelegate {
         window?.rootViewController?.present(UIHostingController(rootView: vc), animated: true)
         return true
     }
-    
-//    func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
-//        let deneme = UIView()
-//        deneme.frame = CGRect(x: 50, y: 50, width: 200, height: 200)
-//        deneme.backgroundColor = .red
-//        return deneme
-//    }
 }
 

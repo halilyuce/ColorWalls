@@ -30,29 +30,29 @@ class FirebaseData: ObservableObject {
             }
             
             documentSnapshot!.documentChanges.forEach { diff in
-                    // Real time create from server
-                    if (diff.type == .added) {
-                        let msgData = Location(id: diff.document.documentID, title: diff.document.get("title") as! String, description: diff.document.get("description") as! String, location: diff.document.get("location") as! GeoPoint, logo: diff.document.get("logo") as! String, images: diff.document.get("images") as! [String])
-                        self.data.append(msgData)
-                    }
-                    
-                    // Real time modify from server
-                    if (diff.type == .modified) {
-                        self.data = self.data.map { (eachData) -> Location in
-                            var data = eachData
-                            if data.id == diff.document.documentID {
-                                data.title = diff.document.get("title") as! String
-                                data.description = diff.document.get("description") as! String
-                                data.location = diff.document.get("location") as! GeoPoint
-                                data.logo = diff.document.get("logo") as! String
-                                data.images = diff.document.get("images") as! [String]
-                                return data
-                            }else {
-                                return eachData
-                            }
+                // Real time create from server
+                if (diff.type == .added) {
+                    let msgData = Location(id: diff.document.documentID, title: diff.document.get("title") as! String, description: diff.document.get("description") as! String, location: diff.document.get("location") as! GeoPoint, logo: diff.document.get("logo") as! String, images: diff.document.get("images") as! [String])
+                    self.data.append(msgData)
+                }
+                
+                // Real time modify from server
+                if (diff.type == .modified) {
+                    self.data = self.data.map { (eachData) -> Location in
+                        var data = eachData
+                        if data.id == diff.document.documentID {
+                            data.title = diff.document.get("title") as! String
+                            data.description = diff.document.get("description") as! String
+                            data.location = diff.document.get("location") as! GeoPoint
+                            data.logo = diff.document.get("logo") as! String
+                            data.images = diff.document.get("images") as! [String]
+                            return data
+                        }else {
+                            return eachData
                         }
                     }
                 }
+            }
         }
     }
 }
